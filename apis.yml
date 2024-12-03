@@ -1,0 +1,37 @@
+aid: chief-human-capital-officers
+name: Chief Human Capital Officers
+description: >-
+  The Chief Human Capital Officers (CHCO) Council is the principal interagency
+  forum to advise and coordinate the activities of our members on such matters
+  of modernization of human resources systems, improved quality of human
+  resources information and legislation affecting human resources operations and
+  organizations.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API
+created: '2024-12-03'
+modified: '2024-12-03'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/chief-human-capital-officers/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: chief-human-capital-officers:chief-human-capital-officers
+    name: Chief Human Capital Officers
+    description: >-
+      The Chief Human Capital Officers (CHCO) Council is the principal
+      interagency forum to advise and coordinate the activities of our members
+      on such matters of modernization of human resources systems, improved
+      quality of human resources information and legislation affecting human
+      resources operations and organizations.
+    humanURL: https://www.chcoc.gov
+    tags:
+      - API
+    properties:
+      - type: Documentation
+        url: https://www.chcoc.gov
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
