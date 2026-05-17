@@ -1,6 +1,6 @@
 aid: chief-human-capital-officers
 name: Chief Human Capital Officers Council
-x-type: government
+kind: government
 description: >-
   The Chief Human Capital Officers (CHCO) Council is the principal interagency
   forum to advise and coordinate the activities of members on matters of
