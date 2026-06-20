@@ -17,7 +17,7 @@ description: >-
 type: Index
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: >-
   https://raw.githubusercontent.com/api-evangelist/chief-human-capital-officers/refs/heads/main/apis.yml
 tags:
@@ -44,7 +44,7 @@ apis:
       expose a dedicated developer API; resources are distributed as web
       pages and downloadable documents alongside OPM's broader human
       capital management resources.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.opm.gov/chcoc
     tags:
       - Federal Government
