@@ -58,6 +58,8 @@ apis:
       - type: Statute
         url: https://www.law.cornell.edu/uscode/text/5/1401
 common:
+  - type: DomainSecurity
+    url: security/chief-human-capital-officers-domain-security.yml
   - type: Website
     url: https://www.opm.gov/chcoc
   - type: LegacyWebsite
