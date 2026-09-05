@@ -1,0 +1,180 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Direct HTTP probes of the named /.well-known/ paths on every host this record knows —
+  the council's own domains (chcoc.gov, www.chcoc.gov, beta.chcoc.gov), the host that
+  actually serves the council's site (www.opm.gov / opm.gov), and the parent agency's
+  open-data host (data.opm.gov). No API baseURL or OpenAPI servers[] host exists for this
+  record, so there is no fourth host class to probe.
+provider: Chief Human Capital Officers Council
+providerId: chief-human-capital-officers
+summary: >-
+  No /.well-known/ document is served on any host associated with the CHCO Council.
+  chcoc.gov and www.chcoc.gov 301 every path to https://www.opm.gov/chcoc. www.opm.gov
+  answers 404 for extensionless paths and a 503 HTML "Unexpected Error" CMS page for
+  paths carrying a file extension — neither is a document. beta.chcoc.gov is a catch-all
+  that answers 200 with the same HTML page shell for every path, including
+  /.well-known/agent-card.json, and is therefore recorded as a miss rather than a hit.
+  Notably, OPM publishes a real vulnerability disclosure policy as a web page covering
+  chcoc.gov and opm.gov, but does NOT serve it as an RFC 9116 /.well-known/security.txt.
+notes:
+  - >-
+    No WellKnown or SecurityTxt pointer is emitted in apis.yml: this file records a
+    measured absence, not a served surface.
+hosts:
+  - host: www.chcoc.gov
+    note: 301 redirects every path to https://www.opm.gov/chcoc
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 301
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+        file: null
+      - path: /.well-known/api-catalog
+        status: 301
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 301
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 301
+        file: null
+      - path: /.well-known/agent.json
+        status: 301
+        file: null
+  - host: chcoc.gov
+    note: 301 redirects every path to https://www.opm.gov/chcoc
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 301
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+        file: null
+      - path: /.well-known/api-catalog
+        status: 301
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 301
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 301
+        file: null
+      - path: /.well-known/agent.json
+        status: 301
+        file: null
+  - host: www.opm.gov
+    note: >-
+      The host that actually serves the CHCO Council site. Extensionless paths return a
+      bare 404; paths with a file extension return a 503 whose body is the opm.gov
+      "Unexpected Error" HTML page (Content-Type is set to application/json on some of
+      them, but the body is HTML). No document on any path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 503
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 503
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 503
+        file: null
+      - path: /.well-known/agent.json
+        status: 503
+        file: null
+  - host: opm.gov
+    note: 302 redirects every path to the www host
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 302
+        file: null
+      - path: /.well-known/agent.json
+        status: 302
+        file: null
+  - host: beta.chcoc.gov
+    note: >-
+      FALSE POSITIVE GUARD — this host answers HTTP 200 with the same opm.gov HTML page
+      shell for every path requested, including /openapi.json and
+      /.well-known/agent-card.json. Every 200 below is an HTML shell, not a document, and
+      is recorded as a miss.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 200
+        file: null
+      - path: /.well-known/agent.json
+        status: 200
+        file: null
+  - host: data.opm.gov
+    note: >-
+      Parent agency (OPM) open-data host, a Blazor application. Included because it is the
+      only machine-data host in this record's neighborhood; it is OPM's, not the Council's.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: hru.gov
+    note: >-
+      DNS NXDOMAIN — the host does not resolve. The apis.yml HRUniversity pointer at
+      https://hru.gov/ was confirmed dead in this pass and removed.
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

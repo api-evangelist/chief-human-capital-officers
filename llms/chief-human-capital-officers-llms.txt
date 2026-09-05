@@ -1,0 +1,63 @@
+# Chief Human Capital Officers (CHCO) Council
+
+> The CHCO Council is the principal interagency forum of the U.S. federal government for
+> coordinating human capital and human resources policy across departments and agencies.
+> It was established by the Chief Human Capital Officers Act of 2002 (5 U.S.C. 1401-1402),
+> is chaired by the Director of the U.S. Office of Personnel Management (OPM), and is
+> vice-chaired by the Deputy Director for Management at OMB. The Council publishes policy
+> memoranda, annual reports, working-group products and a member-agency roster.
+
+## What this is, and what it is not
+
+The CHCO Council is a **policy body, not an API provider**. As of 2026-09-05 it publishes
+no API, no OpenAPI/AsyncAPI/GraphQL contract, no SDK, no MCP server, no agent card and no
+`/.well-known/` document. Everything below is a human-readable web page or a PDF. An agent
+asking "how do I call the CHCO Council API" should be told plainly that there is not one.
+
+The Council's former domain, `chcoc.gov`, now 301-redirects to `https://www.opm.gov/chcoc`;
+its content lives inside the OPM website.
+
+## Council resources
+
+- [CHCO Council home](https://www.opm.gov/chcoc): Leadership, latest news, and entry points to every section below.
+- [Published memos](https://www.opm.gov/chcoc/published-memos/): The Council's transmittal archive — government-wide HR policy memoranda issued to agency Chief Human Capital Officers. This is the Council's primary published output.
+- [Member agencies](https://www.opm.gov/chcoc/member-agencies/): Roster of the departments and agencies represented on the Council.
+- [Annual reports](https://www.opm.gov/chcoc/annual-reports/): Yearly reports on Council activity and federal human capital priorities.
+- [CHCO Council news](https://www.opm.gov/chcoc/news/): Announcements and updates.
+- [Legacy domain](https://www.chcoc.gov/): Redirects to the OPM-hosted Council site.
+
+## Statutory and governance basis
+
+- [5 U.S.C. § 1401 — Establishment of agency Chief Human Capital Officers](https://www.law.cornell.edu/uscode/text/5/1401): The Chief Human Capital Officers Act of 2002, the Council's enabling statute.
+- [USAGov agency entry](https://www.usa.gov/agencies/chief-human-capital-officers-council): The Council's entry in the official U.S. government agency directory.
+
+## Parent agency and related federal HR surfaces
+
+These belong to the U.S. Office of Personnel Management or to other federal programs, **not
+to the CHCO Council**. They are listed because they are where federal human-capital data
+actually is, and an agent looking for programmatic access should be pointed at them rather
+than at the Council.
+
+- [OPM](https://www.opm.gov): The Council's chair agency and web host.
+- [OPM Developer](https://www.opm.gov/developer/): OPM's developer page — operating-status XML/JSON feeds and links to open data. These are OPM's feeds; the Council publishes none.
+- [OPM Open Data](https://data.opm.gov): OPM's open-data platform, including federal workforce data downloads.
+- [Performance management policy](https://www.opm.gov/policy-data-oversight/performance-management/): OPM guidance the Council coordinates around.
+- [USAJOBS](https://www.usajobs.gov/): The federal government's official employment site; the USAJOBS API is operated separately at data.usajobs.gov.
+
+## Security and privacy
+
+- [OPM Vulnerability Disclosure Policy](https://www.opm.gov/vulnerability-disclosure-policy/): The VDP governing this surface. Its scope explicitly names both `chcoc.gov` and `opm.gov`. Reports go to opm-vdp@submit.bugcrowd.com or https://bugcrowd.com/opm-vdp; scope questions to vulnerabilitydisclosure@opm.gov. No bounty is offered. Note that OPM does not serve an RFC 9116 `/.well-known/security.txt`, so this policy is not machine-discoverable.
+- [OPM Privacy Program](https://www.opm.gov/privacy/): Privacy policy covering the OPM-hosted properties, including the Council site.
+- [Accessibility (Section 508)](https://www.opm.gov/information-management/accessibility/)
+
+## Council working groups
+
+HR Line of Business; Human Capital Strategic Planning; Workforce Planning and Analysis;
+Talent Acquisition; Learning and Development; Employee Engagement and Performance
+Management; HR Workforce Capacity; Federal Diversity, Equity, Inclusion and Accessibility.
+
+## Provenance
+
+Generated 2026-09-05 by the API Evangelist enrichment pipeline from `apis.yml` and from
+live probes of the hosts above. Not published by the CHCO Council or by OPM. Every link
+was fetched and returned HTTP 200 on 2026-09-05 unless noted.

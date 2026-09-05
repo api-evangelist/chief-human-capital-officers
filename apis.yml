@@ -27,17 +27,21 @@ deliveryModel:
   generated: '2026-08-28'
   method: derived
 accessModel:
-  pricing: freemium
-  onboarding: unknown
+  pricing: free
+  onboarding: none
   trial: false
   try_now: false
-  public: false
-  label: Freemium
-  confidence: medium
+  public: true
+  label: Free and unauthenticated
+  confidence: high
   source:
   - plans
-  generated: '2026-07-22'
+  generated: '2026-09-05'
   method: derived
+  note: >-
+    Corrected 2026-09-05. The previous freemium/private reading was derived from a
+    scaffold plans artifact that invented Free/Professional/Enterprise tiers. The Council
+    publishes federal policy documents free of charge with no account and no key.
 position: Consuming
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chief-human-capital-officers.png
@@ -66,7 +70,7 @@ tags_raw:
   - Talent Acquisition
   - Workforce Management
 created: '2024-12-03'
-modified: '2026-04-23'
+modified: '2026-09-05'
 specificationVersion: '0.23'
 apis:
   - aid: chief-human-capital-officers:chcoc-resources
@@ -95,6 +99,18 @@ apis:
         url: https://www.opm.gov
       - type: Statute
         url: https://www.law.cornell.edu/uscode/text/5/1401
+      - type: PublishedMemos
+        name: CHCO Council Published Memos
+        url: https://www.opm.gov/chcoc/published-memos/
+      - type: MemberAgencies
+        name: CHCO Council Member Agencies
+        url: https://www.opm.gov/chcoc/member-agencies/
+      - type: AnnualReports
+        name: CHCO Council Annual Reports
+        url: https://www.opm.gov/chcoc/annual-reports/
+      - type: Newsroom
+        name: CHCO Council News
+        url: https://www.opm.gov/chcoc/news/
 common:
   - type: DomainSecurity
     url: security/chief-human-capital-officers-domain-security.yml
@@ -108,8 +124,6 @@ common:
   - type: Statute
     name: Chief Human Capital Officers Act of 2002
     url: https://www.law.cornell.edu/uscode/text/5/1401
-  - type: HRUniversity
-    url: https://hru.gov/
   - type: USAJobs
     url: https://www.usajobs.gov/
   - type: PerformanceManagement
@@ -117,7 +131,22 @@ common:
   - type: USAGov
     url: https://www.usa.gov/agencies/chief-human-capital-officers-council
   - type: PrivacyPolicy
-    url: https://www.opm.gov/information-management/privacy-policy/
+    url: https://www.opm.gov/privacy/
+  - type: VulnerabilityDisclosure
+    name: OPM Vulnerability Disclosure Policy
+    url: security/chief-human-capital-officers-vulnerability-disclosure.yml
+  - type: Security
+    name: OPM Vulnerability Disclosure Policy
+    url: https://www.opm.gov/vulnerability-disclosure-policy/
+  - type: LLMsTxt
+    url: llms/chief-human-capital-officers-llms.txt
+  - type: Plans
+    url: plans/chief-human-capital-officers-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/chief-human-capital-officers-rate-limits.yml
+  - type: Support
+    name: Contact OPM
+    url: https://www.opm.gov/about-us/contact-us/
   - name: WorkingGroups
     type: WorkingGroups
     data:
@@ -161,3 +190,32 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    The CHCO Council is a statutory interagency policy forum (5 U.S.C. 1401-1402), not a
+    software producer — it publishes HR policy memos, annual reports and a member roster
+    as web pages and PDFs, its own chcoc.gov domain 301s wholesale into
+    https://www.opm.gov/chcoc, and full STEP 0b contract discovery across chcoc.gov,
+    www.chcoc.gov, beta.chcoc.gov, opm.gov, www.opm.gov and data.opm.gov turned up no
+    OpenAPI, GraphQL, MCP, agent card or /.well-known/ document of any kind.
+  evidence:
+    - url: https://www.opm.gov/chcoc
+      status: 200
+    - url: https://www.opm.gov/openapi.json
+      status: 404
+    - url: https://www.opm.gov/.well-known/api-catalog
+      status: 404
+    - url: https://www.chcoc.gov/openapi.json
+      status: 301
+    - url: https://beta.chcoc.gov/openapi.json
+      status: 200
+    - url: https://hru.gov/
+      status: 0
+  checked: '2026-09-05'
