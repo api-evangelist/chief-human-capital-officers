@@ -49,7 +49,7 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/chief-human-capital-officers/refs/heads/main/apis.yml
 tags:
   - CHCO
-  - Federal-Government
+  - Federal Government
   - HR Policy
   - Human Capital
   - Human Resources
@@ -69,6 +69,7 @@ tags_raw:
   - Public Sector
   - Talent Acquisition
   - Workforce Management
+  - Federal-Government
 created: '2024-12-03'
 modified: '2026-09-05'
 specificationVersion: '0.23'
@@ -85,13 +86,14 @@ apis:
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.opm.gov/chcoc
     tags:
-      - Federal-Government
+      - Federal Government
       - Human Resources
       - Human Capital
     tags_raw:
       - Federal Government
       - Human Resources
       - Human Capital
+      - Federal-Government
     properties:
       - type: Documentation
         url: https://www.opm.gov/chcoc
