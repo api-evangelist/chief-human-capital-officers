@@ -71,7 +71,7 @@ tags_raw:
   - Workforce Management
   - Federal-Government
 created: '2024-12-03'
-modified: '2026-09-05'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: chief-human-capital-officers:chcoc-resources
@@ -114,6 +114,8 @@ apis:
         name: CHCO Council News
         url: https://www.opm.gov/chcoc/news/
 common:
+  - url: https://www.opm.gov/news/
+    type: Blog
   - type: DomainSecurity
     url: security/chief-human-capital-officers-domain-security.yml
   - type: Website
