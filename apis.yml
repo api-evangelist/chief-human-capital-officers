@@ -114,6 +114,8 @@ apis:
         name: CHCO Council News
         url: https://www.opm.gov/chcoc/news/
 common:
+  - type: FinOps
+    url: finops/chief-human-capital-officers-finops.yml
   - url: https://www.opm.gov/news/
     type: Blog
   - type: DomainSecurity
