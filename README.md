@@ -1,4 +1,4 @@
-# Chief Human Capital Officers Council (chief-human-capital-officers)
+# Chief Human Capital Officers Council
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,47 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The Chief Human Capital Officers (CHCO) Council is the principal interagency forum to advise and coordinate the activities of members on matters of modernization of human resources (HR) systems, improved quality of human resources information, and legislation affecting human resources operations and organizations across the U.S. federal government. Established under the Chief Human Capital Officers Act of 2002 (5 U.S.C. 1401-1402), the Council is chaired by the Director of the U.S. Office of Personnel Management (OPM) with the Deputy Director for Management at OMB serving as Vice Chair.
+The Chief Human Capital Officers (CHCO) Council is the principal interagency forum to advise and coordinate the activities of members on matters of modernization of human resources (HR) systems, improved quality of human resources information, and legislation affecting human resources operations and organizations across the U.S. federal government. Established under the Chief Human Capital Officers Act of 2002 (5 U.S.C. 1401-1402), the Council is chaired by the Director of the U.S. Office of Personnel Management (OPM) with the Deputy Director for Management at OMB serving as Vice Chair. The CHCO Council coordinates federal human capital management strategy, supports the Federal HR workforce, advances workforce planning and talent acquisition, and oversees performance management, employee engagement, learning and development, and HR policy implementation across departments and agencies.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/chief-human-capital-officers/refs/heads/main/apis.yml)
+**Areas:** CHCO · Federal Government · HR Policy · Human Capital · Human Resources · Interagency Council · OPM · Public Sector · Talent Acquisition · Workforce Management
 
-## Scope
+## Chief Human Capital Officers Council on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Chief Human Capital Officers Council is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/chief-human-capital-officers/](https://apis.io/providers/chief-human-capital-officers/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- CHCO, Federal Government, HR Policy, Human Capital, Human Resources, Interagency Council, OPM, Public Sector, Talent Acquisition, Workforce Management
+- [Chief Human Capital Officers Council Resources](https://apis.io/apis/chief-human-capital-officers/chcoc-resources/) — The CHCO Council publishes its charter, leadership roster, working group output, policy memoranda, and federal human capital guidance through chcoc.gov (now…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (2)
 
-### Chief Human Capital Officers Council Resources
+Authentication, trust centre, and vulnerability disclosure.
 
-The CHCO Council publishes its charter, leadership roster, working group output, policy memoranda, and federal human capital guidance through chcoc.gov (now hosted under opm.gov). The Council does not expose a dedicated developer API; resources are distributed as web pages and downloadable documents alongside OPM's broader human capital management resources.
+- [Chief Human Capital Officers Domain Security](https://apis.io/security/chief-human-capital-officers/chief-human-capital-officers-domain-security/)
+- [Chief Human Capital Officers Vulnerability Disclosure](https://apis.io/security/chief-human-capital-officers/chief-human-capital-officers-vulnerability-disclosure/)
 
-- **Human URL:** [https://www.opm.gov/chcoc](https://www.opm.gov/chcoc)
+#### Plans and pricing (1)
 
-## Common Properties
+Published plans, tiers and prices.
+
+- [Chief Human Capital Officers Plans Pricing](https://apis.io/plans/chief-human-capital-officers/chief-human-capital-officers-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Chief Human Capital Officers Rate Limits](https://apis.io/rate-limits/chief-human-capital-officers/chief-human-capital-officers-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Chief Human Capital Officers Finops](https://apis.io/finops/chief-human-capital-officers/chief-human-capital-officers-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.opm.gov/chcoc)
-- [Legacy Website](https://www.chcoc.gov/)
-- [Parent Agency: U.S. Office of Personnel Management](https://www.opm.gov)
-- [Statute: Chief Human Capital Officers Act of 2002](https://www.law.cornell.edu/uscode/text/5/1401)
-- [HR University](https://hru.gov/)
-- [USAJobs](https://www.usajobs.gov/)
-- [Performance Management](https://www.opm.gov/policy-data-oversight/performance-management/)
-- [USA.gov](https://www.usa.gov/agencies/chief-human-capital-officers-council)
-- [Privacy Policy](https://www.opm.gov/information-management/privacy-policy/)
+- [Support](https://www.opm.gov/about-us/contact-us/)
+- [Blog](https://www.opm.gov/news/)
+- [Security](https://www.opm.gov/vulnerability-disclosure-policy/)
+- [Privacy policy](https://www.opm.gov/privacy/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 13.8** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/chief-human-capital-officers/](https://apis.io/providers/chief-human-capital-officers/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Chief Human Capital Officers Council: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/chief-human-capital-officers/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
